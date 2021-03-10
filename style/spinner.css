@@ -1,0 +1,83 @@
+
+svg {
+  animation: 10s linear ease infinite svg-animation;
+  max-width: 100px;
+  
+}
+svg:nth-child(1) {
+  animation: 2s linear infinite svg-animation;
+  max-width: 100px;
+  
+}
+svg:nth-child(2) {
+  animation: 2s linear infinite svg-animation;
+  max-width: 100px;
+  
+}
+
+@keyframes svg-animation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg)
+  }
+}
+
+circle {
+  animation: 1.4s ease-in-out infinite both circle-animation;
+  display: block;
+  fill: transparent;
+  stroke: #2f3d4c;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 280;
+  stroke-width: 5px;
+  transform-origin: 50% 50%;
+}
+
+
+circle:nth-child(1){
+  animation: 1.4s ease-in-out infinite both circle-animation;
+  animation-delay: 5s;
+  display: block;
+  fill: transparent;
+  stroke: #2f3d4c;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 280;
+  stroke-width: 5px;
+  transform-origin: 50% 50%;
+}
+
+circle:nth-child(2){
+  animation: 1.4s ease-in-out infinite both circle-animation;
+  
+  display: block;
+  fill: transparent;
+  stroke: #2f3d4c;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 280;
+  stroke-width: 5px;
+  transform-origin: 50% 50%;
+}
+
+@keyframes circle-animation {
+  0%,
+  25% {
+    stroke-dashoffset: 280;
+    transform: rotate(0);
+  }
+  
+  50%,
+  75% {
+    stroke-dashoffset: 75;
+    transform: rotate(45deg);
+  }
+  
+  100% {
+    stroke-dashoffset: 280;
+    transform: rotate(360deg);
+  }
+}
